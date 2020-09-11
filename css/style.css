@@ -246,11 +246,15 @@ html {
 .card-container .card {
     position: relative;
     width: 300px;
-    height: 200px;
+    height: 250px;
 }
 
 .card-container .card .content {
     text-align: center;
+}
+
+.card-container .card .content p {
+    font-size: 1.5rem;
 }
 
 .card-container .card i {
@@ -280,9 +284,28 @@ html {
     max-width: 100px;
 }
 
-.card-container .card .face.face.face1 h3 {
+.card-container .card .face.face1 h3 {
     margin: 10px 0 0;
     color: #fff;
     text-align: center;
     font-size: 1.8rem;
+}
+
+.card-container .card:hover .face.face1 {
+    transform: translateY(-100%) rotateX(90deg);
+    background: var(--primary-color);
+}
+
+.card-container .card .face.face2 {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transform-origin: top;
+    transform: translateY(100%) rotateX(90deg);
+}
+
+.card-container .card:hover .face.face2 {
+    transform: translateY(0) rotateX(0deg);
 }
